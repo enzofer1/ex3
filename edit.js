@@ -17,4 +17,18 @@ function is_even(number){
     else{
         return false;
     }
-}    
+}
+let ativado = false;
+function altera(){
+    document.body.classList.toggle('blackmode');
+    let botao = document.querySelector("#modo");
+   
+    if(!ativado){
+        botao.innerText = "Ativar modo claro";
+        ativado = true;
+    }
+    else{
+        botao.innerText = "Ativar modo escuro";
+        ativado = false;
+    }
+}
